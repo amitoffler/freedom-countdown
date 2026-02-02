@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>自由日倒數</title>
+
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <meta name="theme-color" content="#070A12" />
+
+  <!-- iPhone 加到主畫面用（圖示） -->
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="badge">COUNTDOWN</div>
+      <h1 class="title">距離<span class="accent">蕭莉蓉</span>賣身契自由日</h1>
+      <p class="sub" id="targetHint">目標：—</p>
+    </header>
+
+    <section class="panel">
+      <div class="time-grid">
+        <div class="card">
+          <div class="num" id="d">00</div>
+          <div class="lab">Days</div>
+        </div>
+        <div class="card">
+          <div class="num" id="h">00</div>
+          <div class="lab">Hours</div>
+        </div>
+        <div class="card">
+          <div class="num" id="m">00</div>
+          <div class="lab">Minutes</div>
+        </div>
+        <div class="card">
+          <div class="num" id="s">00</div>
+          <div class="lab">Seconds</div>
+        </div>
+      </div>
+
+      <div class="status" id="status">啟動中…</div>
+
+      <div class="actions">
+        <button class="btn" id="setBtn">設定自由日</button>
+        <button class="btn ghost" id="resetBtn">恢復預設</button>
+      </div>
+
+      <p class="hint">📌 iPhone：Safari 開啟 → 分享 →「加入主畫面」</p>
+    </section>
+
+    <footer class="foot">
+      <span class="dot"></span>
+      <span>Neon Cyber Mode</span>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
